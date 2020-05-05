@@ -13,6 +13,20 @@ Link: [Kaggle Contest](https://www.kaggle.com/rubenssjr/brasilian-houses-to-rent
 - Deal with outliers(Use log / drop first and last quarter)
 - Deal with label like animal ....
 
+| Attribute           | Process               |
+| ------------------- | --------------------- |
+| City                | One-Hot Encoding      |
+| Animal              | Integer Encoding      |
+| furnished           | Integer Encoding      |
+| Floor               | replace "-" with mean |
+| hoa (R$)            | Apply *log*           |
+| rent amount (R$)    | Apply *log*           |
+| property tax (R$)   | Apply *log*           |
+| fire insurance (R$) | Apply *log*           |
+| Total               | Apply *log*           |
+
+
+
 ### Model
 
 #### Attribute reduction
