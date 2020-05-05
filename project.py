@@ -1,4 +1,4 @@
-class project(object):
+class project_framework(object):
     def __init__(self, data):
         self.data = data
     def clean(self):
@@ -40,5 +40,5 @@ def fillAnimalFurniture(x):
         return 1
     else:
         return 0
-## pro = project(data)
+## pro = project_framework(data)
 ## pro.clean()
