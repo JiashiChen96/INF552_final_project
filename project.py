@@ -19,7 +19,7 @@ class project_framework(object):
         self.data['floor'] = self.data['floor'].astype(float)
         self.data['floor'].fillna(self.data['floor'].mean(), inplace = True)
         
-        missing_attributes = ["property tax (R$)", "hoa (R$)"]
+        missing_attributes = ["property tax (R$)", "hoa (R$)", 'rent amount (R$)', 'fire insurance (R$)']
         for attr in missing_attributes:
             self.data[attr] = self.data[attr].apply(lambda x: replace_with_nan(x, 0))
         imp_mean = IterativeImputer(random_state=0)
